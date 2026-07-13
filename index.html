@@ -280,6 +280,25 @@
   footer{background:var(--olive);color:#cdd3c6;text-align:center;padding:40px 24px;font-size:.95rem}
   footer a{color:var(--gold-light);text-decoration:none}
 
+  /* approach (הדרך שלנו) */
+  .approach{background:var(--sand)}
+  .approach-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:50px}
+  .approach-card{background:var(--white);border-radius:var(--radius);padding:34px 32px;box-shadow:var(--shadow-sm);border:1px solid rgba(176,141,87,.12);transition:.4s}
+  .approach-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .approach-card h3{font-size:1.35rem;margin-bottom:10px;color:var(--olive)}
+  .approach-card p{font-size:1.05rem}
+
+  /* outcomes (מה תיקחו) */
+  .outcomes{background:linear-gradient(135deg,var(--olive) 0%,#33402F 100%);color:#fff;text-align:center}
+  .outcomes h2.section-title{color:#fff}
+  .outcomes .section-tag{color:var(--gold-light)}
+  .outcomes .lead{color:#e6e0d3}
+  .outcomes-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:44px;text-align:right}
+  .outcomes-grid .oc{display:flex;gap:13px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:20px 22px;font-size:1.08rem;color:#f0ece2}
+  .outcomes-grid .oc::before{content:"✓";flex:0 0 auto;color:var(--gold-light);font-weight:700}
+  .outcomes .close{font-family:'Frank Ruhl Libre',serif;font-size:1.5rem;color:var(--gold-light);margin-top:40px}
+  @media(max-width:820px){.approach-grid,.outcomes-grid{grid-template-columns:1fr}}
+
   /* reveal animation */
   .reveal{opacity:0;transform:translateY(34px);transition:.9s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
@@ -309,10 +328,10 @@
 <!-- HERO -->
 <header class="hero">
   <div class="hero-inner">
-    <div class="eyebrow">מרחב לזוגות · בוטיק · גולן</div>
+    <div class="eyebrow">מסע ריפוי וצמיחה · רטריט זוגי · גולן</div>
     <h1>נוכחות</h1>
     <div class="tagline">רטריט זוגות</div>
-    <p class="sub">רטריט סופ״ש לזוגות שאוהבים ומבקשים לצמוח, לחזור ליחד קרוב, ולהצית מחדש את אש האהבה.</p>
+    <p class="sub">מסע ריפוי וצמיחה זוגי, בגוף, בנפש ובתודעה. לזוגות אוהבים שמבקשים לחזור אל הקרבה, ולצמוח יחד מיסודות חדשים.</p>
     <a href="#form" class="btn btn-lg">לשיחת היכרות</a>
     <div class="hero-meta">
       <span>חמישי-שבת</span>
@@ -325,10 +344,11 @@
 <!-- RECOGNITION -->
 <section class="recognition">
   <div class="wrap narrow reveal">
-    <h2 class="section-title">אתם ביחד. אבל מתי בפעם האחרונה באמת נפגשתם?</h2>
+    <h2 class="section-title">אתם אוהבים. אבל לפעמים הקרבה נעצרת.</h2>
     <p>אתם אוהבים. זו לא השאלה.</p>
-    <p>אבל איפשהו בין העבודה, הילדים, הכביסה והמסכים - נהיה שקט. לא ריב גדול, לא דרמה. פשוט… ריחוק קטן שהתרגל להיות שם.</p>
-    <p>מדברים על מה שצריך לקנות, מי אוסף מהחוג, מה יש מחר. פחות על מה שקורה בפנים.</p>
+    <p>אבל בין העומס, השגרה והחיים, נהיה ריחוק קטן. פחות מגע, פחות שיחה אמיתית, יותר ניהול של היומיום.</p>
+    <p>ולפעמים הקרבה נעצרת לא כי אין אהבה, אלא כי הגוף למד להישמר. יש רגעים של דריכות, חומה שעולה בלי שקראנו לה, מגע שנעשה מורכב.</p>
+    <p>זה יכול להיות מוכר לשניכם, או בעיקר לאחד מכם. בשני המקרים, אתם לא לבד.</p>
     <p class="whisper">נוכחות היא הבסיס לזוגיות קרובה, אינטימית ומלאת אהבה.</p>
   </div>
 </section>
@@ -338,9 +358,26 @@
   <div class="wrap narrow reveal">
     <div class="section-tag">מבט אחר</div>
     <h2 class="section-title">הקשר שלכם לא צריך תיקון. הוא מבקש נוכחות.</h2>
-    <p>רוב הזוגות שמגיעים אלינו לא באים כי משהו התקלקל. הם באים כי הם מרגישים שיכול להיות מעבר - עוד קרבה, עוד עומק, אינטימיות ומגע קרוב ואמיתי - והם רק צריכים מקום ורגע כדי לפגוש ולגלות אותו.</p>
-    <p>לפעמים כל מה שצריך זה לצאת מהשגרה. לכבות את הרעש. ולהזכיר לגוף, לא רק לראש, למה בחרתם זה בזה.</p>
-    <p style="color:var(--olive);font-family:'Frank Ruhl Libre',serif;font-size:1.35rem;margin-top:10px">זה מה שהרטריט הזה נועד לתת.</p>
+    <p>רוב הזוגות שמגיעים אלינו לא באים כי משהו התקלקל. הם באים כי הם מרגישים שיכול להיות מעבר: עוד קרבה, עוד עומק, אינטימיות ומגע קרוב ואמיתי, והם רק צריכים מקום ורגע כדי לפגוש ולגלות אותו.</p>
+    <p>ואם אחד מכם נושא איתו משקל של פעם, פחד או דריכות שנשארה בגוף, גם זה מקבל כאן מקום. מערכת העצבים לא צריכה עוד ביקורת. היא צריכה ביטחון.</p>
+    <p style="color:var(--olive);font-family:'Frank Ruhl Libre',serif;font-size:1.35rem;margin-top:10px">זה מה שהמסע הזה נועד לתת: מעבר עדין מהתמודדות והישרדות, אל קרבה, צמיחה ושגשוג.</p>
+  </div>
+</section>
+
+<!-- APPROACH / הדרך שלנו -->
+<section class="approach">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-tag">הדרך שלנו</div>
+      <h2 class="section-title">נוכחות אוהבת, הבסיס לריפוי ולצמיחה</h2>
+      <p class="lead narrow">מה שהופך את המסע הזה לעמוק, ובטוח, הוא לא עוד טכניקה. זו גישה.</p>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card reveal"><h3>נוכחות אוהבת</h3><p>היכולת לשהות עם מה שיש, ברכות ובקבלה. משם שינוי אמיתי קורה מעצמו.</p></div>
+      <div class="approach-card reveal"><h3>גוף, נפש ותודעה</h3><p>לא רק לדבר. חוויה שמגיעה עד הגוף ומערכת העצבים, ששם נמצא הבסיס לתחושת הביטחון שלנו בעולם ואחד עם השני.</p></div>
+      <div class="approach-card reveal"><h3>מסע אישי וגם זוגי</h3><p>כל אחד פוגש את עצמו, וביחד אתם בונים יסודות חדשים לקשר.</p></div>
+      <div class="approach-card reveal"><h3>בהדרגה, בבחירה, בבטחון</h3><p>שום דבר לא נכפה. אנחנו הולכים בקצב שלכם, בתוך מרחב מוגן.</p></div>
+    </div>
   </div>
 </section>
 
@@ -349,17 +386,18 @@
   <div class="wrap">
     <div class="reveal">
       <div class="section-tag">המסע</div>
-      <h2 class="section-title">שלושה ימים של נוכחות, קרבה והתחדשות</h2>
+      <h2 class="section-title">שלושה ימים של נוכחות, ריפוי וקרבה מתחדשת</h2>
       <p class="lead narrow">מרגע שאתם מניחים את התיקים, הזמן מאט. לא סדנה שמלמדת אתכם "איך להיות זוג נכון" - אלא חוויה שמחזירה אתכם אל עצמכם ואחד אל השני.</p>
     </div>
     <div class="exp-grid">
-      <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M8 9.5h8M8 13h5"/><path d="M21 11.5a8 8 0 0 1-11.5 7.2L3 20.5l1.8-6A8 8 0 1 1 21 11.5z"/></svg></span><h3>אינטימיות ותקשורת זוגית</h3><p>לפגוש שוב, לדבר אחרת, להקשיב מהלב.</p></div>
-      <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M8.5 12V5.5a1.5 1.5 0 0 1 3 0V11M11.5 11V4.5a1.5 1.5 0 0 1 3 0V11M14.5 11V6.5a1.5 1.5 0 0 1 3 0V13"/><path d="M8.5 12c-.6-1-2-2-3.2-1.2-.9.6-.5 1.7 0 2.6l2 3.6A5.5 5.5 0 0 0 12 21h1.5a5.5 5.5 0 0 0 5.5-5.5V13"/></svg></span><h3>סדנת מגע נוכח</h3><p>לחזור לשפה שקדמה למילים.</p></div>
-      <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 8c3 0 3-2 6-2s3 2 6 2M3 12.5c3.5 0 3.5-2.5 7-2.5"/><path d="M14 7.5a2.5 2.5 0 1 1 2 4H3M15 16.5a2 2 0 1 0 1.7 3H3"/></svg></span><h3>ריברסינג ונשימה</h3><p>לשחרר את מה שמגביל אתכם ולצאת לחופש וחוויה חדשה.</p></div>
+      <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M8 9.5h8M8 13h5"/><path d="M21 11.5a8 8 0 0 1-11.5 7.2L3 20.5l1.8-6A8 8 0 1 1 21 11.5z"/></svg></span><h3>אינטימיות ותקשורת זוגית</h3><p>לפגוש שוב, לדבר אחרת, וללמוד תקשורת שמקרבת.</p></div>
+      <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M8.5 12V5.5a1.5 1.5 0 0 1 3 0V11M11.5 11V4.5a1.5 1.5 0 0 1 3 0V11M14.5 11V6.5a1.5 1.5 0 0 1 3 0V13"/><path d="M8.5 12c-.6-1-2-2-3.2-1.2-.9.6-.5 1.7 0 2.6l2 3.6A5.5 5.5 0 0 0 12 21h1.5a5.5 5.5 0 0 0 5.5-5.5V13"/></svg></span><h3>סדנת מגע נוכח</h3><p>לחזור לשפה שקדמה למילים, בהדרגה ובבחירה.</p></div>
+      <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 8c3 0 3-2 6-2s3 2 6 2M3 12.5c3.5 0 3.5-2.5 7-2.5"/><path d="M14 7.5a2.5 2.5 0 1 1 2 4H3M15 16.5a2 2 0 1 0 1.7 3H3"/></svg></span><h3>ריברסינג ונשימה</h3><p>לשחרר את מה שמגביל, ולפתוח מרחב לחופש וחיות.</p></div>
       <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 20h18L14.5 9l-3 4.5L9 10l-6 10z"/><circle cx="7.5" cy="6" r="1.8"/></svg></span><h3>מסע בטבע</h3><p>מסע אל הטבע הפראי של הגולן - נצא אל היופי, נטבול במים חיים, ונתחבר מחדש אל הטבע ואל השלמות הגדולה שסביבנו, וזו שבתוכנו.</p></div>
       <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2.5c1.6 2 3 3.6 3 5.6a3 3 0 0 1-6 0c0-2 1.4-3.6 3-5.6z"/><path d="M12 11.5v6M8 20.5h8"/></svg></span><h3>קבלת שבת משותפת</h3><p>רגע של שקט, הודיה וחיבור.</p></div>
       <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M4.5 20C3 14 6.5 5 20 4c1 10.5-3.5 15.5-11.5 15.5-1.6 0-2.9-.4-4-1z"/><path d="M4.5 20c4-6.5 8.5-9 12.5-10"/></svg></span><h3>ארוחות ביתיות צמחוניות</h3><p>אוכל מפנק שמכין את הגוף לרוך.</p></div>
       <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="2.8"/><circle cx="16" cy="8" r="2.8"/><path d="M3 20c0-3 2.3-5 5-5s5 2 5 5M13.5 20c.2-2.8 2.4-4.6 5-4.6"/></svg></span><h3>זמן פרטי לזוג</h3><p>כי לא כל דבר קורה בקבוצה.</p></div>
+      <div class="exp-card reveal"><span class="ico"><svg viewBox="0 0 24 24"><path d="M3 18h18"/><path d="M6.5 18a5.5 5.5 0 0 1 11 0"/><path d="M12 4.5v2M5.2 7.2l1.4 1.4M18.8 7.2l-1.4 1.4M3.5 12.5H5M19 12.5h1.5"/></svg></span><h3>חזון זוגי משותף</h3><p>לחלום יחד קדימה: לאן אתם רוצים לצמוח, כזוג וכבית.</p></div>
     </div>
     <div class="gallery reveal">
       <img src="assets/living2.jpg" alt="סלון הבית בגולן" loading="lazy">
@@ -375,7 +413,7 @@
     <div class="section-tag">בכוונה קטן</div>
     <h2>קבוצה קטנה. מקום גדול.</h2>
     <div class="big-num">3</div>
-    <p>בחרנו בכוונה בשלושה זוגות בלבד. לא כי זה נשמע יוקרתי - אלא כי תהליך אמיתי צריך מרחב בטוח. בקבוצה כזאת קטנה, כל זוג מקבל את מלוא תשומת הלב. יש מקום להיפתח בקצב שלכם, בלי להתערבב בהמון, בלי להיעלם. אתם לא "משתתפים". אתם נוכחים.</p>
+    <p>בחרנו בכוונה בשלושה זוגות בלבד. לא כי זה נשמע יוקרתי, אלא כי תהליך עמוק צריך מרחב בטוח. כאן אתם בונים שלושה מעגלי ביטחון: עם עצמכם, בזוגיות, ובתוך קבוצה קטנה ותומכת. אתם לא "משתתפים". אתם נוכחים.</p>
   </div>
 </section>
 
@@ -391,20 +429,41 @@
         <img src="assets/dinai.jpg" alt="דינאי רונה">
         <div class="body">
           <h3>דינאי רונה</h3>
-          <div class="role">מטפל בפסיכותרפיה אינטגרטיבית גוף־נפש</div>
-          <p>מעל 25 שנות ניסיון בליווי אנשים בתהליכי שינוי, בכלים של גוף, נפש ותודעה.</p>
+          <div class="role">מטפל בפסיכותרפיה אינטגרטיבית גוף־נפש, ממוקד טראומה</div>
+          <p>מזה 25 שנה מלווה אנשים בתהליכי שינוי וריפוי, בכלים של גוף ומערכת העצבים, הילינג, ריברסינג ונשימה, מגע וטיפול סומטי. מומחה בפיתוח חוסן וצמיחה מטראומה ומשבר.</p>
         </div>
       </div>
       <div class="facil-card reveal">
         <img src="assets/tadhar.jpg" alt="תדהר רונה">
         <div class="body">
           <h3>תדהר רונה</h3>
-          <div class="role">יועצת זוגית ומשפחתית ומנחת קבוצות</div>
-          <p>מלווה זוגות ומשפחות במסעות של קרבה, תקשורת וריפוי, מתוך רגישות והקשבה עמוקה.</p>
+          <div class="role">יועצת ומטפלת זוגית ומשפחתית, מנחת קבוצות</div>
+          <p>מלווה זוגות ומשפחות מתוך דגש על מערכת היחסים, הבסיס לכל קשר. בעלת ניסיון רב בעבודה עם טראומה במערכות יחסים.</p>
         </div>
       </div>
     </div>
-    <p class="facil-note reveal">יחד אנחנו מביאים נוכחות זכרית ונשית, מקצועיות עמוקה - ובעיקר, מרחב בטוח ולא שיפוטי, שבו מותר לכם להיות בדיוק איפה שאתם.</p>
+    <p class="facil-note reveal">וגם זוג בעצמנו, שצומח יחד מעל 20 שנה. ההשלמה בינינו, נוכחות זכרית ונשית ועומק מקצועי ואישי, יוצרת מרחב בטוח להתקרב פנימה ואחד אל השני.</p>
+  </div>
+</section>
+
+<!-- OUTCOMES / מה תיקחו -->
+<section class="outcomes">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-tag">התוצאה</div>
+      <h2 class="section-title">מה תיקחו איתכם הביתה</h2>
+      <p class="lead narrow">אי אפשר להבטיח ריפוי, ולא נעשה זאת. אבל זה מה שהמסע מזמין, ומה שזוגות מתחילים לפגוש בתוכו:</p>
+    </div>
+    <div class="outcomes-grid">
+      <div class="oc reveal">קרבה ואינטימיות מחודשת</div>
+      <div class="oc reveal">תחושת ביטחון וחופש, עם עצמכם ובזוגיות המשותפת</div>
+      <div class="oc reveal">יסודות חזקים לצמיחה זוגית משותפת</div>
+      <div class="oc reveal">כלים לתקשורת מקרבת וליצירת אינטימיות</div>
+      <div class="oc reveal">חזון זוגי משותף לצמיחה קדימה</div>
+      <div class="oc reveal">מעבר מהישרדות ודריכות, אל רוגע, שגשוג ויצירה</div>
+      <div class="oc reveal">לב פתוח, משאבים זמינים, וכלים להמשיך בבית</div>
+    </div>
+    <p class="close reveal">כי זוגיות יכולה להיות בית: לצמיחה, לשגשוג ולאהבה.</p>
   </div>
 </section>
 
@@ -413,29 +472,29 @@
   <div class="wrap">
     <div class="reveal">
       <div class="section-tag">התאמה</div>
-      <h2 class="section-title">למי הרטריט הזה נכון?</h2>
-      <p class="lead narrow" style="margin-top:18px">יש רגע שבו זוג מבין שהוא רוצה יותר מלנהל יחד את החיים - הוא רוצה לחיות אותם קרוב. אם משהו מהדברים הבאים מרגיש מוכר, כנראה שהמסע הזה מדבר אליכם.</p>
+      <h2 class="section-title">למי המסע הזה נכון?</h2>
+      <p class="lead narrow" style="margin-top:18px">זהו מסע ריפוי וצמיחה לזוגות אוהבים שמבקשים לצמוח יחד. הוא מזמין גם זוגות שאחד מבני הזוג נושא השפעות של טראומה או פוסט-טראומה, כשאינו במשבר אקוטי. זהו תהליך סדנאי-חווייתי עמוק, ולא תחליף לטיפול קליני.</p>
     </div>
     <div class="whom-grid">
       <div class="whom-col yes reveal">
         <h3>זה בשבילכם אם -</h3>
         <ul>
-          <li>אתם אוהבים - אבל העבודה, הילדים והשגרה בלעו את הזמן שהיה פעם רק שלכם</li>
-          <li>אתם מתגעגעים לשיחות שנמשכו לתוך הלילה, למגע שלא מבקש כלום, לצחוק המשותף</li>
-          <li>אתם מרגישים שיש בכם ובקשר עוד עומק וקרבה - שרק מחכים למקום להיפתח</li>
-          <li>אתם רוצים לתת לעצמכם, כזוג, מתנה של זמן, נוכחות ותשומת לב מלאה</li>
-          <li>אתם מוכנים לעצור, להאט, ולהיזכר למה בחרתם דווקא זה בזה</li>
+          <li>אתם אוהבים, ומבקשים לצמוח ולהתמתח יחד, אישית וזוגית</li>
+          <li>אתם מתגעגעים לקרבה, למגע ולשיחה שבאמת פוגשת</li>
+          <li>אחד מכם נושא משקל של פעם, ואתם רוצים מרחב בטוח לרכך אותו יחד</li>
+          <li>אתם רוצים לבנות יסודות חדשים וחזון משותף לקשר</li>
         </ul>
       </div>
       <div class="whom-col no reveal">
         <h3>זה פחות מתאים אם -</h3>
         <ul>
-          <li>אתם מחפשים טיפול זוגי לחירום או פתרון מהיר למשבר חריף</li>
-          <li>אחד מכם לא באמת מעוניין להיות שם</li>
+          <li>אתם במשבר אקוטי או זקוקים לטיפול דחוף (זה מרחב של העמקה, לא חדר מיון)</li>
+          <li>אתם מחפשים תחליף לטיפול קליני</li>
+          <li>רק אחד מכם באמת רוצה להיות שם</li>
         </ul>
       </div>
     </div>
-    <p class="whom-note reveal">ואם אתם לא בטוחים לאיזו קטגוריה אתם שייכים - בשביל זה בדיוק יש שיחת היכרות. נדבר.</p>
+    <p class="whom-note reveal">לא בטוחים אם זה הזמן והמסע הנכון לכם? בדיוק בשביל זה יש שיחת היכרות. נדבר בכנות, ונראה יחד, גם אם התשובה היא "עדיין לא".</p>
   </div>
 </section>
 
@@ -452,6 +511,7 @@
         <div class="row"><div class="k">כמה זמן</div><div class="v">חמישי בערב עד שבת.</div></div>
         <div class="row"><div class="k">איפה</div><div class="v">בית אירוח מפנק באווירה משפחתית, בלב הגולן.</div></div>
         <div class="row"><div class="k">מה כלול</div><div class="v">כל הסדנאות והתכנים, הלינה והאירוח המפנק, הארוחות הצמחוניות, קבלת שבת והליווי המלא.</div></div>
+        <div class="row"><div class="k">המשך</div><div class="v">הרטריט הוא תהליך שלם בפני עצמו. למי שירצה, אפשר להמשיך בליווי זוגי או פרטני גם אחריו.</div></div>
       </div>
       <div class="price-card reveal">
         <div class="label">ההשקעה</div>
@@ -473,6 +533,8 @@
       <h2 class="section-title">מה שאולי מטריד אתכם</h2>
     </div>
     <div class="faq-list">
+      <details class="faq-item reveal"><summary>יש אצלנו טראומה או פוסט-טראומה, זה בשבילנו?</summary><div class="ans">כן, אם אינכם במשבר אקוטי. המסע בנוי להיות בטוח, הדרגתי ובבחירה שלכם, ודינאי ותדהר מנוסים בליווי צמיחה מטראומה. בשיחת ההיכרות נוודא יחד שזה הזמן הנכון.</div></details>
+      <details class="faq-item reveal"><summary>זה מחליף טיפול?</summary><div class="ans">לא. זהו תהליך סדנאי-חווייתי עמוק, שיכול להשלים תהליך טיפולי אך לא מחליף אותו.</div></details>
       <details class="faq-item reveal"><summary>נצטרך לחשוף דברים אישיים מול זוגות אחרים?</summary><div class="ans">לא. שום דבר לא נכפה. אתם משתפים רק מה שנכון לכם, ובקצב שלכם. חלק מהתהליך קורה בזוג, בזמן פרטי.</div></details>
       <details class="faq-item reveal"><summary>יש מגע? זה לא מביך?</summary><div class="ans">סדנת המגע נעשית בהדרגה, בכבוד ובבחירה מלאה שלכם. אין שום דבר כפוי, ואנחנו מלווים כל צעד בעדינות.</div></details>
       <details class="faq-item reveal"><summary>אנחנו לא ממש "רוחניים". זה בשבילנו?</summary><div class="ans">בהחלט. הרטריט לא דורש שום ידע או רקע קודם. הוא מדבר בשפה אנושית ופשוטה - של קרבה, נוכחות ורגש.</div></details>
@@ -485,9 +547,9 @@
 <!-- FINAL CTA -->
 <section class="final">
   <div class="reveal">
-    <h2>אולי זה הזמן לעצור. יחד.</h2>
-    <p>אתם לא צריכים לחכות שמשהו יישבר כדי לתת לעצמכם את זה. לפעמים המתנה הכי גדולה שזוג יכול לתת לעצמו היא פשוט זמן - להיות נוכחים, רכים, וקרובים שוב.</p>
-    <p>אם משהו בפנים מהנהן עכשיו - בואו נדבר. בלי התחייבות. רק שיחה קטנה להכיר, לשאול, ולראות אם המסע הזה נכון לכם.</p>
+    <h2>אולי זה הזמן. יחד.</h2>
+    <p>אתם לא צריכים לחכות שמשהו יישבר כדי לתת לעצמכם את זה. ולא צריך להיות "מתוקנים" כדי להתחיל. אתם לא לבד, ואתם לא מקולקלים.</p>
+    <p>אם משהו בפנים מהנהן עכשיו, בואו נדבר. בלי התחייבות. שיחה קטנה להכיר, לשאול, ולראות אם המסע הזה נכון לכם.</p>
     <a href="#form" class="btn btn-lg" style="margin-top:26px">לשיחת היכרות</a>
     <div class="sign">שלכם באהבה,<br>דינאי ותדהר</div>
   </div>
