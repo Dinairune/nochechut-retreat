@@ -116,6 +116,25 @@
     color:var(--olive-soft);text-align:center;margin-top:34px;line-height:1.6;
   }
 
+  /* recognize (identification) */
+  .recognize{background:var(--sand)}
+  .recognize .rz-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:46px}
+  .recognize .rz-card{
+    background:var(--white);border-radius:var(--radius);padding:34px 32px;
+    box-shadow:var(--shadow-sm);border:1px solid rgba(176,141,87,.12);
+    border-top:4px solid var(--gold-light);
+  }
+  .recognize .rz-card h3{font-size:1.3rem;margin-bottom:16px;color:var(--olive)}
+  .recognize .rz-card p{font-size:1.08rem;margin-bottom:14px;color:var(--ink-soft)}
+  .recognize .rz-card p:last-child{margin-bottom:0}
+  .recognize .rz-between{max-width:720px;margin:36px auto 0;text-align:center}
+  .recognize .rz-between p{font-size:1.18rem;color:var(--ink);margin-bottom:8px}
+  .recognize .whisper{
+    font-family:'Frank Ruhl Libre',serif;font-style:italic;font-size:1.5rem;
+    color:var(--olive-soft);text-align:center;margin-top:36px;line-height:1.6;
+  }
+  @media(max-width:820px){.recognize .rz-grid{grid-template-columns:1fr}}
+
   /* new view */
   .newview .narrow p{margin-bottom:22px;font-size:1.2rem;text-align:center}
 
@@ -360,6 +379,37 @@
 
 <!-- BAND: couple sofa -->
 <section class="band reveal"><img src="assets/couple-sofa.jpg" alt="זוגיות קרובה ואוהבת" loading="lazy"></section>
+
+<!-- RECOGNIZE / identification -->
+<section class="recognize">
+  <div class="wrap">
+    <div class="reveal" style="text-align:center">
+      <h2 class="section-title">אולי אתם מזהים את זה</h2>
+      <p class="lead narrow">יש דברים שקשה להסביר במילים. כשאחד מכם נושא בגוף טראומה או תקופה קשה, זה נוגע בשניכם, גם כשלא מדברים על זה.</p>
+    </div>
+    <div class="rz-grid">
+      <div class="rz-card reveal">
+        <h3>מה שאחד מכם נושא</h3>
+        <p>יש רגעים שהוא כאן, לצידך, ועדיין מרגיש רחוק. משהו בפנים נסגר, גם כשהוא רוצה להיות קרוב.</p>
+        <p>מספיק לפעמים טון של קול, ומשהו בגוף כבר נדרך. הוא מתרחק, מגיב, ואחר כך מצטער שזה יצא ככה.</p>
+      </div>
+      <div class="rz-card reveal">
+        <h3>ומה שהשני נושא</h3>
+        <p>מתגעגע לבן הזוג שהכיר, גם כשהוא יושב ממש מולו.</p>
+        <p>לומד להיות דרוך בשבילו, שם לב מראש למה שעלול לכאוב, ושוכח שגם הוא צריך שמישהו יראה אותו.</p>
+      </div>
+    </div>
+    <div class="rz-between reveal">
+      <p>ולפעמים נפתח ביניכם מרחק שאף אחד לא ביקש. אחד מנסה להתקרב, השני צריך רגע לבד, ושניכם נשארים עם אותו כאב, כל אחד בצד שלו.</p>
+      <p>האהבה לא הלכה לשום מקום. היא רק מתחת לכל מה שהגוף עשה כדי לשרוד.</p>
+    </div>
+    <div class="rz-between reveal">
+      <p>טראומה שוברת משהו בסיסי, את התחושה שהעולם בטוח ושיש בו מקום להישען. ובתוך הכאב הזה, כל אחד מרגיש לפעמים קצת לבד.</p>
+      <p>והאהבה, כשהיא נוכחת ובטוחה, היא היסוד שממנו מתחילים להירפא. גשר של אמון וביטחון בונים יחד, לאט, בעדינות.</p>
+    </div>
+    <p class="whisper reveal">כי בסוף, כל אחד מאיתנו עושה את הדרך שלו, אבל לצמוח, אנחנו לומדים לעשות יחד. באהבה.</p>
+  </div>
+</section>
 
 <!-- NEW VIEW -->
 <section class="newview">
