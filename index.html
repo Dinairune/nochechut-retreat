@@ -27,6 +27,8 @@
     --radius:22px;
   }
   *{margin:0;padding:0;box-sizing:border-box}
+  /* hide host-site theme chrome when embedded in WordPress (inert on standalone staging) */
+  #masthead,.site-header,.ast-mobile-header-wrap,.ast-above-header,.ast-below-header,#colophon,.site-footer{display:none!important}
   html{scroll-behavior:smooth}
   body{
     font-family:'Heebo',sans-serif;
